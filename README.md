@@ -1,2 +1,2 @@
 # react-flux-contact
-a simple contact list app using react, flux and nodejs
+a simple show contacts status app using react, flux and nodejs
