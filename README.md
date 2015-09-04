@@ -1,5 +1,5 @@
 # react-flux-contact
-a simple show contacts status app using react, flux and nodejs
+a simple show contacts status app using react, flux and nodejs (express, socket.io)
 
 useful links:
 - (THE BESTTTTTT) react for stupid ppl: http://blog.andrewray.me/reactjs-for-stupid-people/

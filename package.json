@@ -1,0 +1,31 @@
+{
+  "name": "react-flux-contact-status",
+  "version": "1.0.0",
+  "description": "a simple react, flux show contacts status app",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksivam/react-flux-contact-status.git"
+  },
+  "author": "chander.krishna@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksivam/react-flux-contact-status/issues"
+  },
+  "homepage": "https://github.com/ksivam/react-flux-contact-status#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-copy": "^0.8.1",
+    "grunt-run": "^0.4.0",
+    "react": "^0.13.3",
+    "socket.io": "^1.3.6"
+  },
+  "engines": {
+    "node": "0.12.7"
+  }
+}
