@@ -1,8 +1,5 @@
-var React = require('react');
-var ContactTextBox = require('./components/ContactTextBox.react');
+var React = require('react'),
+    ContactApp = require('./components/ContactApp.react'),
+    contactAppElement = React.createElement(ContactApp);
 
-
-React.render(
-    <ContactTextBox className='hohoo' id='eeee' placeholder='enter text here!' />,
-    document.getElementById('contactsapp')
-);
+React.render(contactAppElement, document.getElementById('contactsapp'));

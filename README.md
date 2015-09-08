@@ -9,3 +9,5 @@ useful links:
 -- The concept is: view (reactjs) triggers some event (say after text input), that event updates a model,
    then the model triggers an event, and the view responds to the model's events by re-rendering with the latest data.
    ie. view --(triggers event)--> update a model --(triggers event)--> update view by re-rendering with latest data.
+-- Flow: React Component --> Actions/Action Creators --> Dispatcher (only one per app, ie. Singleton) --> Stores -->
+         Event emitters --> React Component.

@@ -28,7 +28,7 @@ module.exports = function(grunt){
         browserify: {
                 options: {
                     sourceMaps: true,
-                    transform: [require('grunt-react').browserify] // user to transform jsx into js
+                    //transform: [require('grunt-react').browserify] // user to transform jsx into js
             },
             app:{
                 src: 'app/www/js/main.js',
