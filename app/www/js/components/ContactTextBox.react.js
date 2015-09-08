@@ -42,7 +42,10 @@ var React = require('react'),
                 this.setState({
                     value: ''
                 });
-                ContactActions.add(value);
+                ContactActions.add({
+                    name: value,
+                    status: 'Online'
+                });
             }
         }
 

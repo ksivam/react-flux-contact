@@ -5,10 +5,17 @@
 var React = require('react'),
     ReactPropTypes = React.PropTypes,
     Dom = React.DOM,
+    ContactActions = require('../actions/ContactActions'),
     ContactTextBox = require('./ContactTextBox.react'),
     ListBox = require('./ListBox.react'),
     ContactApp = React.createClass({
         displayName: 'ContactApp',
+        componentDidMount: function(){
+            ContactActions.connect('creds');
+        },
+        componentWillUnmount: function() {
+            ContactActions.disconnect();
+        },
         render: function() {
             var contactTextBox = contactTextBox = React.createElement(ContactTextBox, {
                     className:'contactTextBox',

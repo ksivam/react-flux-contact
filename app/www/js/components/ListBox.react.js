@@ -13,11 +13,11 @@ var React = require('react'),
         propTypes: {
             key: ReactPropTypes.string.isRequired,
             className: ReactPropTypes.string,
-            items: ReactPropTypes.array
+            items: ReactPropTypes.object
         },
         getInitialState: function(){
             return {
-                items: this.props.items || []
+                items: this.props.items || {}
             }
         },
         componentDidMount: function(){
@@ -35,7 +35,7 @@ var React = require('react'),
             }
 
             for(var key in items){
-                list.push(Dom.li({key: key}, items[key]));
+                list.push(Dom.li({key: key}, key +' : ' + items[key]));
             }
 
             return Dom.ul({key: 'listul'}, list);

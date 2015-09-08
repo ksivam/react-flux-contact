@@ -7,7 +7,7 @@ var AppDispatcher = require('../dispatcher/AppDispatcher'),
     EventEmitter = require('events').EventEmitter,
     CHANGE_EVENT = 'contact-store-change',
     ContactStore = {
-        _contacts: [],
+        _contacts: {},
         _emitChange: function(){
             EventEmitter.prototype.emit(CHANGE_EVENT);
         },
@@ -19,7 +19,7 @@ var AppDispatcher = require('../dispatcher/AppDispatcher'),
           EventEmitter.prototype.removeListener(CHANGE_EVENT, callback);
         },
         add: function(contact) {
-            this._contacts.push(contact);
+            this._contacts[contact.name] = contact.status;
             this._emitChange();
         },
         getAll: function(){
